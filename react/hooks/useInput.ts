@@ -1,7 +1,9 @@
 import { useState } from "react";
 
+type InputType = string | number | boolean;
+
 interface InputValueProps {
-  initialValue: string | number | boolean | { [key: string]: string | boolean };
+  initialValue: InputType | { [key: string]: InputType };
 }
 
 export const useInput = ({ initialValue }: InputValueProps) => {
