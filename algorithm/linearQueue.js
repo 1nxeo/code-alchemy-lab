@@ -23,6 +23,10 @@ class QueueWithArray {
   size() {
     return this.rear - this.front;
   }
+  isEmpty() {
+    return this.queue.length === 0;
+    // return this.rear === this.front;
+  }
 }
 
 // do not use shift method of Array Object
