@@ -11,7 +11,6 @@ interface PortalProps {
 
 export default function Portal({ isOpen, children, setIsOpen }: PortalProps) {
   const [portal, setPortal] = useState<HTMLElement | null>();
-
   useEffect(() => {
     if (document) {
       const portalElem = document.getElementById("portal");
@@ -19,6 +18,7 @@ export default function Portal({ isOpen, children, setIsOpen }: PortalProps) {
       setPortal(portalElem);
     }
   }, []);
+  if (typeof window === "undefined") return <></>;
 
   if (!isOpen) {
     return null;
