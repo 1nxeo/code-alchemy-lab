@@ -1,0 +1,16 @@
+{
+  "name": "code-alchemy-lab",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/1nxeo/code-alchemy-lab.git",
+  "author": "1nxeo <y.1nseooo@gmail.com>",
+  "license": "MIT",
+  "workspaces": {
+    "packages": [
+      "react"
+    ]
+  },
+  "scripts": {
+    "react": "pnpm workspace react"
+  }
+}
